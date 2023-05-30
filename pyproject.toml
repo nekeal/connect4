@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "connect4"
+name = "python-connect4"
 version = "0.0.1"
 description = "Multiplayer implementation of \"connect four\" game"
 authors = [
