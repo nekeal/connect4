@@ -1,0 +1,18 @@
+{
+  "template": "https://github.com/woltapp/wolt-python-package-cookiecutter",
+  "commit": "4eecc9c4d27e3c9321438bc1fdaf717bec5eadf6",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "author_name": "Nekeal",
+      "author_email": "szymon.sc.cader@gmail.com",
+      "github_username": "nekeal",
+      "project_name": "Connect4",
+      "project_slug": "connect4",
+      "package_name": "connect4",
+      "project_short_description": "Multiplayer implementation of \"connect four\" game",
+      "_template": "https://github.com/woltapp/wolt-python-package-cookiecutter"
+    }
+  },
+  "directory": null
+}
