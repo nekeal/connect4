@@ -68,7 +68,12 @@ src_paths = ["src", "tests"]
 
 [tool.black]
 target-version = ["py37", "py38", "py39"]
+line-length = 120
 include = '\.pyi?$'
+
+[tool.ruff]
+select = ["E", "F", "B", "DJ", "UP", "PTH", "C4", "T10", "T20",]
+line-length = 120
 
 [tool.pytest.ini_options]
 addopts = """\
