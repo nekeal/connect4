@@ -32,6 +32,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.9.1, <4.0"
+click = "*"
 
 [tool.poetry.dev-dependencies]
 black = "*"
@@ -56,7 +57,10 @@ python-kacl = "*"
 pyupgrade = "*"
 tryceratops = "*"
 ruff = "*"
+types-click = "*"
 
+[tool.poetry.scripts]
+connect4 = "connect4.__main__:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -74,6 +78,10 @@ include = '\.pyi?$'
 [tool.ruff]
 select = ["E", "F", "B", "DJ", "UP", "PTH", "C4", "T10", "T20",]
 line-length = 120
+
+[tool.ruff.per-file-ignores]
+"src/connect4/__main__.py" = ["T20",]
+"src/connect4/controllers.py" = ["T20",]
 
 [tool.pytest.ini_options]
 addopts = """\
@@ -100,3 +108,8 @@ warn_redundant_casts = true
 warn_return_any = true
 check_untyped_defs = true
 show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = ['tests.*']
+disallow_untyped_defs = false
+strict_equality = false
