@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-connect4"
-version = "0.0.1"
+version = "0.1.0"
 description = "Multiplayer implementation of \"connect four\" game"
 authors = [
     "Nekeal <szymon.sc.cader@gmail.com>",
